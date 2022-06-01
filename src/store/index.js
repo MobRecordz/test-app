@@ -42,9 +42,12 @@ const store = new Vuex.Store({
     mutateApiToken(state, payload) {
       state.apiToken = payload?.token ?? null;
       state.refreshToken = payload?.refreshToken ?? null;
-      
-      const apiTokenData = payload ? JSON.stringify(payload) : payload;
-      localStorage.setItem('api-token', apiTokenData);
+
+      if (payload) {
+        localStorage.setItem('api-token', JSON.stringify(payload));
+      } else {
+        localStorage.removeItem('api-token')
+      }
     },
 
     mutatePassList(state, payload) {
@@ -82,10 +85,9 @@ const store = new Vuex.Store({
     
     // мне дали только ендпоинт логина, по этому юзера возьму из json с ответом /login
     fetchUser(store) {
-      const { userData, token, refreshToken } = userDataResponse;
+      const { userData } = userDataResponse;
 
       store.commit('mutateUserData', userData);
-      store.commit('mutateApiToken', { token, refreshToken });
 
       return userData;
     },

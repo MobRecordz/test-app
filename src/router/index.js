@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import PageAuth from '../views/PageAuth.vue'
-// import store from '../store'
 
 Vue.use(VueRouter)
 
@@ -33,14 +32,13 @@ const router = new VueRouter({
   routes
 })
 
-const apiToken = localStorage.getItem('api-token');
 
 router.beforeEach((to, from, next) => {
+  const apiToken = localStorage.getItem('api-token');
+
   if (!apiToken && to.name !== 'auth') {
     next({ name: 'auth' })
   } else {
-    // store.commit('mutateApiToken', JSON.stringify(apiToken))
-    // store.commit
     next()
   }
 })
