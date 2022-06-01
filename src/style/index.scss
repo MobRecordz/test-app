@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --c-main: #7EA613;
+  --c-main--active: #95bb2c;
+  --c-grey: #EDEDED;
+  --c-grey--dark: #E8E8E8;
+  --c-grey--active: #C3C7CF;
+}
+
+.button {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-auto-flow: column;
+  grid-gap: 10px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 2px;
+  background-color: transparent;
+  transition-property: color, background-color;
+  transition-duration: 0.12s;
+  transition-timing-function: ease-in-out;
+  }
+  
+.button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.button--small {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 10px 40px;
+}
+
+// .button--medium {
+//   font-size: 14px;
+//   line-height: 24px;
+//   padding: 12px 24px;
+// }
+
+// .button--large {
+//   font-size: 14px;
+//   line-height: 24px;
+//   padding: 16px 24px;
+// }
+
+.button--main {
+    color: var(--c-main);
+
+    &:hover {
+        color: var(--c-main--active);
+    }
+}
+
+.button--border {
+  border: 1px solid currentColor;
+}
+
+.button--disabled {
+  background-color: #F7F7F7;
+  color: var(--c-grey--active);
+  border: none;
+
+  &:hover {
+    color: var(--c-grey--active);
+  }
+}
+
+.button__icon {
+  background-color: currentColor;
+  // mask: url('/images/icons/arrow-right.svg') no-repeat center;
+  mask-size: 24px;
+}
+
+.button--small .button__icon {
+  width: 14px;
+  height: 14px;
+}
+
+.text--bold {
+  font-weight: 700;
+}
+
+.text--grey {
+  color: var(--c-grey--active);
+}
+
+
+// transitions
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active до версии 2.1.8 */ {
+  opacity: 0;
+}

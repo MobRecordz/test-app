@@ -1,0 +1,38 @@
+{
+  "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiMjM0NzAiLCJmZWF0dXJlIjoiW1wicGF5bWVudFwiLFwibWFwXCIsXCJkb2N1bWVudHNcIixcInBhc3NcIixcIm93bmVyc1wiLFwiYWRtaW5cIixcInBhcnNlY1wiXSIsInBoIjoiKzc5Mjk5MzE4NzY4IiwiZXhwIjoxNjU0MDM5ODIyfQ.tKNRyCtO4l7D-MtILVIya1YhEB8fICFBbEJmxTy79qY",
+  "refreshToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiMjM0NzAiLCJmZWF0dXJlIjoiW1wicGF5bWVudFwiLFwibWFwXCIsXCJkb2N1bWVudHNcIixcInBhc3NcIixcIm93bmVyc1wiLFwiYWRtaW5cIixcInBhcnNlY1wiXSIsInBoIjoiKzc5Mjk5MzE4NzY4IiwiZXhwIjoxNjU0MDk3NDIyfQ.CpUNhdchGK7k7kaYceFmBZocIfW-QtUQdGjKWna-PAk",
+  "userData": {
+    "user": {
+      "ID": "23470",
+      "FIO": "\u0421\u0435\u0440\u0435\u0431\u0440\u0435\u043d\u043d\u0438\u043a\u043e\u0432 \u041a\u043b\u0438\u043c \u041c\u0430\u043a\u0441\u0438\u043c\u043e\u0432\u0438\u0447",
+      "ADDRESS": false,
+      "PHONE": "+79299318768",
+      "TAGS": [],
+      "LOGIN": false,
+      "PASSWORD": "$2y$10$3HOVWAykZo7GAHYC3vgGhe7CYv0iyZI6xfMX\/0rq4FgZ6Hf6wYswW",
+      "CONTRACTS": [],
+      "DOCUMENTS": [],
+      "STATUS": false,
+      "SUGNED_RULES": "yes",
+      "EMAIL": "k.m.serebrennikov@gmail.com",
+      "CONFIRM": "yes",
+      "PASSPORT_NUMBER": false,
+      "CREATE": "2021-11-27 18:15:44",
+      "UPDATE": "2022-03-29 19:13:12",
+      "ORG_NAME": "\u041e\u041e\u041e \u0022\u0418\u043d\u0432\u0435\u0441\u0442 \u0421\u0435\u0440\u0432\u0438\u0441\u0022",
+      "ORG_INN": "7100005253",
+      "ORG_TYPE": "uk",
+      "TOKEN": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IjIzNDcwIg.sHJKhqvcOkWN1cNzrd_VzjizZLJlMuzrUZHPPUrORhw",
+      "TEMP_PASSWORD": false
+    },
+    "featurelist": [
+      "payment",
+      "map",
+      "documents",
+      "pass",
+      "owners",
+      "admin",
+      "parsec"
+    ]
+  }
+}
